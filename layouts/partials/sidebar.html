@@ -8,10 +8,10 @@
     </div>
 
     <ul class="sidebar-nav">
+      Recent versions:
       {{ range .Site.Menus.main -}}
         <li><a href="{{.URL}}"> {{ .Name }} </a></li>
       {{- end }}
-      <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
     </ul>
 
     <p>&copy; {{ now.Format "2006" }} {{ with .Site.Params.copyright }}{{.}}. All rights reserved. {{end}}</p>
