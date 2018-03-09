@@ -1,8 +1,23 @@
 {{ define "main" -}}
 <div class="post">
-  <h1>{{ .Title }}</h1>
-  <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
-  {{ .Content }}
+  <h1>{{ .Title }} - {{ .Params.cohort }}</h1>
+
+  <span class="post-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
+
+  {{ with .Params.brief }}
+  <div class="brief">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  <div class="installers">
+  {{ range $installers := $.Params.installers }}
+  <a href="{{ $installers.url }}">
+    <i class="fab fa-{{ $installers.icon }} fa-2x fa-fw"></i>
+  </a>
+  {{ end }}
+  </div>
+
 </div>
 
 {{ if .Site.DisqusShortname -}}
