@@ -2,9 +2,12 @@
   <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
   {{ partial "sidebar.html" . }}
     <div class="content container">
-    {{ block "main" . -}}{{- end }}
+      <div class="light_bg">
+      {{ block "main" . -}}{{- end }}
+      </div>
     </div>
 
     {{ template "_internal/google_analytics_async.html" . }}
   </body>
+
 </html>

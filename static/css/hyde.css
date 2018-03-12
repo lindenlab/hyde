@@ -66,6 +66,31 @@ html {
   border-color: #ffb100;
   background-color: #d2d5da;
   padding: 0.5em;
+  border-radius: 5px;
+}
+
+.light_bg {
+    background-color: #f8f8f8;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.installer_downloads {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+table{
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+body {
+    background: #e8e9ec url('//secondlife.com/my/_img/backgrounds/my-body-green-bkgd.jpg') repeat-x scroll top left;
 }
 
 /*
@@ -79,7 +104,7 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(237,237,237,1);
-  background-color: #3b3e42;
+  background-color: #000000;
 }
 @media (min-width: 48em) {
   .sidebar {

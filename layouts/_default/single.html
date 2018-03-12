@@ -1,14 +1,22 @@
 {{ define "main" -}}
-<div class="post">
+<div class="light_bg">
   <h1>{{ .Title }} - {{ .Params.cohort }}</h1>
 
-  <span class="post-date">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
+  <span class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</span>
   <div class="background-highlight">
-    {{ with .Params.installers }}
+    <table>
+    <tbody>
+      <tr>
+      {{ with .Params.installers }}
 
-      {{ range $installers := $.Params.installers }}
-      <a href="{{ $installers.url }}"><i class="fab fa-{{ $installers.icon }} fa-2x fa-fw"></i> {{ $installers.platform}}</a><br>
-      {{ end }}
+        {{ range $installers := $.Params.installers }}
+          <td class="installer_downloads">
+            <a href="{{ $installers.url }}"><i class="fab fa-{{ $installers.icon }} fa-2x fa-fw"></i> <br>{{ $installers.platform}}</a>
+          </td>
+        {{ end }}
+      </tr>
+    </tbody>
+    </table>
     {{ end }}
   </div>
 
