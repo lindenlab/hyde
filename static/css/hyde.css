@@ -36,15 +36,37 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
+/* Some SL-Specific stuffs */
+
+.viewer-listing {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.orange {
+  color: #ffb100;
+}
+
+.teal {
+  color: #74ad99;
+}
+
+.background-highlight {
+  border-left: solid;
+  border-width: 0.5em;
+  border-color: #ffb100;
+  background-color: #d2d5da;
+  padding: 0.5em;
+}
 
 /*
  * Sidebar
@@ -130,14 +152,14 @@ a.sidebar-nav-item:focus {
   .content {
     max-width: 38rem;
     margin-left: 20rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
     margin-left: 22rem;
-    margin-right: 4rem;
+    margin-right: 2rem;
   }
 }
 

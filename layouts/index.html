@@ -1,39 +1,52 @@
 {{ define "main" -}}
 
 {{ partial "top.html" . }}
-
+<hr>
 <div class="posts">
 
-<h2>Release Candidates</h2>
-Release Candidate viewers are being evaluated to be the next default download; all are believed to be stable.
+  <h2>Release Candidates</h2>
+  Release Candidate viewers are being evaluated to be the next default download; all are believed to be stable.
 
-{{ range $viewer := $.Site.Params.rcviewers }}
-
-<div class="post">
-    <a href="{{ .version }}">{{ .name }} - {{ .version }}</a>
-{{ end }}
+  <div class="viewer-listing">
+    <ul>
+    {{ range $viewer := $.Site.Params.rcviewers }}
+      <li><a href="{{ .version }}">{{ .name }} - {{ .version }}</a></li>
+    {{ end }}
+    </ul>
+  </div>
 </div>
 
-<h2>Project Viewers</h2>
-Project Viewers are experimental viewers ; they may not be beta quality - use at your own risk.
+<hr>
 
-{{ range $viewer := $.Site.Params.projectviewers }}
+<div class="posts">
+  <h2>Project Viewers</h2>
+  Project Viewers are experimental viewers ; they may not be beta quality - use at your own risk.
 
-<div class="post">
-    <a href="{{ .version }}">{{ .name }} - {{ .version }}</a>
-{{ end }}
+  <div class="viewer-listing">
+    <ul>
+      {{ range $viewer := $.Site.Params.projectviewers }}
+        <li> <a href="{{ .version }}">{{ .name }} - {{ .version }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
 </div>
 
-<h2>Obsolete Viewers</h2>
+<hr>
 
-{{ range $viewer := $.Site.Params.obsoleteviewers }}
+<div class="posts">
+  <h2>Obsolete Viewers</h2>
 
-<div class="post">
-    {{ .text }}<br>
-    <a href="{{ .version }}">{{ .name }} - {{ .version }}</a>
-{{ end }}
+  {{ range $viewer := $.Site.Params.obsoleteviewers }}
+    <div class="viewer-listing">
+      {{ .text }}<br>
+      <ul>
+        <li><a href="{{ .version }}">{{ .name }} - {{ .version }}</a></li>
+      </ul>
+    </div>
+  {{ end }}
 </div>
 
+<hr>
 {{ partial "bottom.html" .}}
 
 {{- end }}
