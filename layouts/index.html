@@ -9,7 +9,7 @@
 
   <div class="viewer-listing">
     <ul>
-    {{ range $viewer := $.Site.Params.rcviewers }}
+    {{ range $viewer := $.Site.Params.viewers.rcviewers }}
       <li><a href="{{ .version }}">{{ .name }} - {{ .version }}</a></li>
     {{ end }}
     </ul>
@@ -24,7 +24,7 @@
 
   <div class="viewer-listing">
     <ul>
-      {{ range $viewer := $.Site.Params.projectviewers }}
+      {{ range $viewer := $.Site.Params.viewers.projectviewers }}
         <li> <a href="{{ .version }}">{{ .name }} - {{ .version }}</a></li>
       {{ end }}
     </ul>
@@ -36,7 +36,7 @@
 <div class="posts">
   <h2>Obsolete Viewers</h2>
 
-  {{ range $viewer := $.Site.Params.obsoleteviewers }}
+  {{ range $viewer := $.Site.Params.viewers.obsoleteviewers }}
     <div class="viewer-listing">
       {{ .text }}<br>
       <ul>
