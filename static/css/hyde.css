@@ -32,66 +32,19 @@
  */
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
-  html {
-    font-size: 14px;
-  }
-}
-@media (min-width: 58em) {
   html {
     font-size: 16px;
   }
 }
-
-/* Some SL-Specific stuffs */
-
-.viewer-listing {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
 }
 
-.orange {
-  color: #ffb100;
-}
-
-.teal {
-  color: #74ad99;
-}
-
-.background-highlight {
-  border-left: solid;
-  border-width: 0.5em;
-  border-color: #ffb100;
-  background-color: #d2d5da;
-  padding: 0.5em;
-  border-radius: 5px;
-}
-
-.light_bg {
-    background-color: #f8f8f8;
-    padding: 0.5em;
-    border-radius: 5px;
-}
-
-.installer_downloads {
-  text-align: center;
-  vertical-align: bottom;
-}
-
-table{
-  table-layout: fixed;
-  width: 100%;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-
-
-body {
-    background: #e8e9ec url('//secondlife.com/my/_img/backgrounds/my-body-green-bkgd.jpg') repeat-x scroll top left;
-}
 
 /*
  * Sidebar
@@ -103,8 +56,8 @@ body {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(237,237,237,1);
-  background-color: #000000;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -119,24 +72,24 @@ body {
 
 /* Sidebar links */
 .sidebar a {
-  color: #5cb192;
+  color: #fff;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #ededed;
+  color: #fff;
   margin-top: 0;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 2.5rem;
+  font-family: "Abril Fatface", serif;
+  font-size: 3.25rem;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
-  padding-left: 0;
-  list-style: none;
+  margin-bottom: 1rem;
 }
 .sidebar-nav-item {
   display: block;
+  line-height: 1.75;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -177,14 +130,14 @@ a.sidebar-nav-item:focus {
   .content {
     max-width: 38rem;
     margin-left: 20rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
     margin-left: 22rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
   }
 }
 
@@ -221,6 +174,122 @@ a.sidebar-nav-item:focus {
  * As of v1.1, Hyde includes optional themes to color the sidebar and links
  * within blog posts. To use, add the class of your choosing to the `body`.
  */
+
+/* Some SL-Specific stuffs */
+
+
+
+.theme-secondlife .viewer-listing {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.theme-secondlife .orange {
+  color: #ffb100;
+}
+
+.theme-secondlife .teal {
+  color: #74ad99;
+}
+
+.theme-secondlife .background-highlight {
+  border-left: solid;
+  border-width: 0.5em;
+  border-color: #ffb100;
+  background-color: #d2d5da;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.theme-secondlife  .light_bg {
+    background-color: #f8f8f8;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.theme-secondlife  .installer_downloads {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.theme-secondlife table {
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.theme-secondlife body {
+    background: #e8e9ec url('//img/my-body-green-bkgd.jpg') repeat-x scroll top left;
+}
+
+.theme-secondlife * {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.theme-secondlife .sidebar {
+  padding: 2rem 1rem;
+  color: rgba(237,237,237,1);
+  background-color: #000000;
+}
+
+.theme-secondlife .sidebar a {
+  color: #5cb192;
+}
+
+.theme-secondlife .sidebar-about h1 {
+  color: #ededed;
+  margin-top: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2.25rem;
+}
+
+.theme-secondlife  .sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+}
+
+.theme-secondlife .sidebar-nav-item {
+  display: block;
+}
+
+.theme-secondlife html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 48em) {
+  .theme-secondlife html {
+    font-size: 14px;
+  }
+  .theme-secondlife   .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 1rem;
+  }
+  .theme-secondlife .sidebar {
+      text-align: left;
+  }
+}
+
+@media (min-width: 58em) {
+  .theme-secondlife html {
+    font-size: 16px;
+  }
+  .theme-secondlife  .sidebar {
+      text-align: left;
+  }
+}
+
+@media (min-width: 64em) {
+  .theme-secondlife  .content {
+    margin-left: 22rem;
+    margin-right: 2rem;
+  }
+  .theme-secondlife  .sidebar {
+      text-align: left;
+  }
+}
+
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
