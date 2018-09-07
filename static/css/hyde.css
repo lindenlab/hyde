@@ -177,7 +177,15 @@ a.sidebar-nav-item:focus {
 
 /* Some SL-Specific stuffs */
 
+.theme-secondlife  {
+  background: #e8e9ec url('../img/my-body-green-bkgd.jpg') repeat-x scroll top left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
 
+.theme-secondlife .lead {
+  font-size: initial;
+}
 
 .theme-secondlife .viewer-listing {
   margin-top: 0.5em;
@@ -219,14 +227,6 @@ a.sidebar-nav-item:focus {
   margin-top: 1rem;
 }
 
-.theme-secondlife body {
-    background: #e8e9ec url('//img/my-body-green-bkgd.jpg') repeat-x scroll top left;
-}
-
-.theme-secondlife * {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 .theme-secondlife .sidebar {
   padding: 2rem 1rem;
   color: rgba(237,237,237,1);
@@ -258,7 +258,7 @@ a.sidebar-nav-item:focus {
 }
 
 @media (min-width: 48em) {
-  .theme-secondlife html {
+  .theme-secondlife {
     font-size: 14px;
   }
   .theme-secondlife   .content {
@@ -268,15 +268,17 @@ a.sidebar-nav-item:focus {
   }
   .theme-secondlife .sidebar {
       text-align: left;
+      font-size: 14px;
   }
 }
 
 @media (min-width: 58em) {
-  .theme-secondlife html {
+  .theme-secondlife {
     font-size: 16px;
   }
   .theme-secondlife  .sidebar {
       text-align: left;
+      font-size: 16px;
   }
 }
 
