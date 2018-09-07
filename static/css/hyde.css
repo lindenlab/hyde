@@ -253,10 +253,6 @@ a.sidebar-nav-item:focus {
   display: block;
 }
 
-.theme-secondlife html {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 @media (min-width: 48em) {
   .theme-secondlife {
     font-size: 14px;
@@ -284,6 +280,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 64em) {
   .theme-secondlife  .content {
+    max-width: initial;
     margin-left: 22rem;
     margin-right: 2rem;
   }
