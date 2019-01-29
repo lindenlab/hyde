@@ -227,6 +227,18 @@ a.sidebar-nav-item:focus {
   margin-top: 1rem;
 }
 
+.theme-secondlife a {
+  color: #4c8b76;
+}
+
+.theme-secondlife  a:hover {
+  color: #66c3a1;
+}
+
+.theme-secondlife a:active{
+  color: #ff6500;
+}
+
 .theme-secondlife .sidebar {
   padding: 2rem 1rem;
   color: rgba(237,237,237,1);
@@ -235,6 +247,14 @@ a.sidebar-nav-item:focus {
 
 .theme-secondlife .sidebar a {
   color: #5cb192;
+}
+
+.theme-secondlife .sidebar a:hover {
+  color: #8cc8b2;
+}
+
+.theme-secondlife .sidebar a:active {
+  color: #ff6500;
 }
 
 .theme-secondlife .sidebar-about h1 {
