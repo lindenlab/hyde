@@ -178,7 +178,7 @@ a.sidebar-nav-item:focus {
 /* Some SL-Specific stuffs */
 
 .theme-secondlife  {
-  background: #e8e9ec url('../img/my-body-green-bkgd.jpg') repeat-x scroll top left;
+  background: #e8e9ec linear-gradient(to bottom, #678b85 0px, #e8e9ed 50%) no-repeat fixed;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
@@ -191,6 +191,19 @@ a.sidebar-nav-item:focus {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
+.theme-secondlife .viewer-listing table {
+  table-layout: auto;
+}
+
+.theme-secondlife th {
+  text-align: left;
+}
+
+.theme-secondlife td {
+  padding-right: 0.5rem;
+}
+
 
 .theme-secondlife .orange {
   color: #ffb100;
@@ -211,7 +224,7 @@ a.sidebar-nav-item:focus {
 
 .theme-secondlife  .light_bg {
     background-color: #f8f8f8;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 5px;
 }
 
@@ -226,6 +239,47 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
+
+.theme-secondlife .inline-label {
+  display: none;
+}
+
+/* Responsive Table Styles */
+@media screen and (max-width: 1150px) {
+  .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr { 
+    display: block;
+  }
+
+  .theme-secondlife th {
+    position: absolute;
+    visibility: hidden;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .theme-secondlife tbody tr:nth-of-type(odd) {
+    background: #e2e2e2;
+    margin: 0.5rem 0;
+  }
+
+  .theme-secondlife td {
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding: 3px;
+    hyphens: auto;
+  }
+
+  .theme-secondlife .inline-label {
+    display: inline-block;
+    flex-basis: 8rem;
+    font-weight: 900;
+  }
+}
+
 
 .theme-secondlife a {
   color: #4c8b76;
