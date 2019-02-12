@@ -246,7 +246,7 @@ a.sidebar-nav-item:focus {
 
 /* Responsive Table Styles */
 @media screen and (max-width: 1150px) {
-  .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr { 
+  .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr {
     display: block;
   }
 
@@ -267,10 +267,11 @@ a.sidebar-nav-item:focus {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    border-bottom: 1px solid #eee;
     position: relative;
     padding: 3px;
     hyphens: auto;
+    justify-content: center;
+    background-color: #d2d5da;
   }
 
   .theme-secondlife .inline-label {
