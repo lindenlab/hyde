@@ -271,7 +271,7 @@ a.sidebar-nav-item:focus {
     position: relative;
     padding: 3px;
     hyphens: auto;
-    justify-content: left;
+    justify-content: center;
   }
 
   .theme-secondlife .inline-label {
