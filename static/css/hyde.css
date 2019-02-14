@@ -236,6 +236,7 @@ a.sidebar-nav-item:focus {
 
 .theme-secondlife table {
   table-layout: fixed;
+  width: 100%;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -247,7 +248,8 @@ a.sidebar-nav-item:focus {
 /* Responsive Table Styles */
 @media screen and (max-width: 1150px) {
   .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr {
-    display: block;
+    display: flex;
+    width: 100%;
   }
 
   .theme-secondlife th {
