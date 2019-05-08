@@ -30,7 +30,9 @@
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
 
   <!-- RSS -->
-  {{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}
+  {{ with .OutputFormats.Get "RSS" }}
+  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  {{ end }}
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
