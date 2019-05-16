@@ -248,7 +248,7 @@ a.sidebar-nav-item:focus {
 /* Responsive Table Styles */
 @media screen and (max-width: 1150px) {
   .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr {
-    display: flex;
+    display: table;
     width: 100%;
   }
 
@@ -271,13 +271,13 @@ a.sidebar-nav-item:focus {
     position: relative;
     padding: 3px;
     hyphens: auto;
-    justify-content: center;
   }
 
   .theme-secondlife .inline-label {
     display: inline-block;
     flex-basis: 8rem;
     font-weight: 900;
+    align-items: center;
   }
 }
 
