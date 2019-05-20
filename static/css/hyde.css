@@ -247,8 +247,31 @@ a.sidebar-nav-item:focus {
 
 /* Responsive Table Styles */
 @media screen and (max-width: 1150px) {
-  .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr {
+
+  /* Minor modification for the repository listings here */
+  /* Looks weird on narrow screens if we use the default settings */
+
+  .theme-secondlife .repository-listing table, .theme-secondlife .repository-listing thead, .theme-secondlife .repository-listing tbody, .theme-secondlife .repository-listing th, .theme-secondlife .repository-listing td, .theme-secondlife .repository-listing tr {
     display: table;
+    width: auto;
+    margin-top: 0rem;
+    line-height: 1.0;
+  }
+
+  .theme-secondlife .repository-listing tbody tr:nth-of-type(odd) {
+    margin: 10px 0;
+  }
+
+  .theme-secondlife .repository-listing .inline-label {
+    display: table-cell;
+    padding-right: 3px;
+  }
+
+  /* Regular table entries here */
+  /* Looks better on narrow screens*/
+
+  .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr {
+    display: flex;
     width: 100%;
   }
 
