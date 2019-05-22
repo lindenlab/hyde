@@ -267,40 +267,22 @@ a.sidebar-nav-item:focus {
     padding-right: 3px;
   }
 
-  /* Regular table entries here */
-  /* Looks better on narrow screens*/
-
-  .theme-secondlife table, .theme-secondlife thead, .theme-secondlife tbody, .theme-secondlife th, .theme-secondlife td, .theme-secondlife tr {
-    display: flex;
-    width: 100%;
-  }
-
-  .theme-secondlife th {
+  .theme-secondlife .repository-listing th {
     position: absolute;
     visibility: hidden;
     top: -9999px;
     left: -9999px;
   }
 
-  .theme-secondlife tbody tr:nth-of-type(odd) {
-    margin: 1rem 0;
-  }
-
-  .theme-secondlife td {
-    border: none;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    position: relative;
-    padding: 3px;
-    hyphens: auto;
-  }
-
-  .theme-secondlife .inline-label {
+  .theme-secondlife .repository-listing .inline-label {
     display: inline-block;
     flex-basis: 8rem;
     font-weight: 900;
     align-items: center;
+  }
+
+  .theme-secondlife .repository-listing td {
+    padding: 3px;
   }
 }
 
